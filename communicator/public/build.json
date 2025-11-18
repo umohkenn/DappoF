@@ -1,8 +1,0 @@
-{
-  "js/communicator.bundle.js": [
-    "public/js/communicator.js"
-  ],
-  "css/communicator.bundle.css": [
-    "public/css/communicator.css"
-  ]
-}
