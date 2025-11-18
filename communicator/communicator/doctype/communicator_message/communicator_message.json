@@ -1,0 +1,129 @@
+{
+ "doctype": "DocType",
+ "name": "Communicator Message",
+ "module": "Communicator",
+ "custom": 0,
+ "istable": 0,
+ "editable_grid": 0,
+ "track_changes": 1,
+ "allow_copy": 0,
+ "allow_guest_to_view": 0,
+ "allow_rename": 0,
+ "in_create": 1,
+ "title_field": "subject",
+ "quick_entry": 0,
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "share": 1,
+   "export": 1
+  },
+  {
+   "role": "Communicator Admin",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "share": 1,
+   "export": 1
+  },
+  {
+   "role": "Communicator User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "email": 1,
+   "share": 1
+  }
+ ],
+ "fields": [
+  {
+   "fieldname": "channel",
+   "fieldtype": "Link",
+   "label": "Channel",
+   "options": "Communicator Channel",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "channel_type",
+   "fieldtype": "Data",
+   "label": "Channel Type",
+   "fetch_from": "channel.channel_type",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject",
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text Editor",
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reply_to",
+   "fieldtype": "Link",
+   "label": "Reply To",
+   "options": "Communicator Message"
+  },
+  {
+   "fieldname": "sender",
+   "fieldtype": "Link",
+   "label": "Sender",
+   "options": "User",
+   "reqd": 1,
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "sent_at",
+   "fieldtype": "Datetime",
+   "label": "Sent At",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "education_links",
+   "fieldtype": "Section Break",
+   "label": "Education Links"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "Student",
+   "depends_on": "eval:doc.channel_type=='Class'"
+  },
+  {
+   "fieldname": "guardian",
+   "fieldtype": "Link",
+   "label": "Guardian",
+   "options": "Guardian"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  }
+ ]
+}

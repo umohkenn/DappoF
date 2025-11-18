@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.DS_Store
+node_modules
+__pycache__
+*.swp
+*.swo

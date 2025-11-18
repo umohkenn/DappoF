@@ -1,0 +1,123 @@
+{
+ "doctype": "DocType",
+ "name": "Communicator Channel",
+ "module": "Communicator",
+ "custom": 0,
+ "istable": 0,
+ "editable_grid": 1,
+ "track_changes": 1,
+ "allow_copy": 0,
+ "allow_guest_to_view": 0,
+ "allow_rename": 1,
+ "in_create": 1,
+ "title_field": "channel_name",
+ "quick_entry": 1,
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1,
+   "export": 1
+  },
+  {
+   "role": "Communicator Admin",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "share": 1,
+   "export": 1
+  },
+  {
+   "role": "Communicator User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "email": 1,
+   "share": 1
+  }
+ ],
+ "fields": [
+  {
+   "fieldname": "channel_name",
+   "fieldtype": "Data",
+   "label": "Channel Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "channel_type",
+   "fieldtype": "Select",
+   "label": "Channel Type",
+   "options": "Class\nGuardians\nStaff\nAnnouncement\nGroup",
+   "default": "Class",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "education_link",
+   "fieldtype": "Section Break",
+   "label": "Education Context"
+  },
+  {
+   "fieldname": "student_group",
+   "fieldtype": "Link",
+   "label": "Student Group",
+   "options": "Student Group",
+   "depends_on": "eval:doc.channel_type=='Class'",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course",
+   "depends_on": "eval:doc.channel_type=='Class'"
+  },
+  {
+   "fieldname": "guardian",
+   "fieldtype": "Link",
+   "label": "Guardian",
+   "options": "Guardian",
+   "depends_on": "eval:doc.channel_type=='Guardians'"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "label": "Instructor",
+   "options": "Instructor",
+   "depends_on": "eval:doc.channel_type=='Staff'"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "privacy",
+   "fieldtype": "Select",
+   "label": "Privacy",
+   "options": "Private\nCourse Only\nOpen",
+   "default": "Course Only",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "announcement",
+   "fieldtype": "Check",
+   "label": "Announcement Only",
+   "default": 0,
+   "depends_on": "eval:doc.channel_type=='Announcement'"
+  }
+ ]
+}
