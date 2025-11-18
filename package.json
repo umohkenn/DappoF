@@ -1,0 +1,10 @@
+{
+  "name": "communicator",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'no-op'",
+    "build": "frappe build --apps communicator"
+  }
+}

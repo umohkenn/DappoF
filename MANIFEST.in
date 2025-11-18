@@ -1,0 +1,14 @@
+include MANIFEST.in
+include requirements.txt
+include modules.txt
+include setup.py
+include setup.cfg
+include pyproject.toml
+include package.json
+include README.md
+recursive-include communicator *.json
+recursive-include communicator *.py
+recursive-include communicator *.txt
+recursive-include communicator *.js
+recursive-include communicator *.css
+recursive-exclude communicator *.pyc

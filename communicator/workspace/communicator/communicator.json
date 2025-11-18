@@ -1,0 +1,36 @@
+{
+ "label": "Communicator",
+ "content": "{\n \"blocks\": []\n}",
+ "icon": "comment-discussion",
+ "module": "Education",
+ "disable_user_customization": 0,
+ "is_hidden": 0,
+ "extendable": 1,
+ "is_standard": 1,
+ "public": 1,
+ "roles": [],
+ "sequence_id": 1,
+ "title": "Communicator",
+ "for_user": "",
+ "parent_page": "Education",
+ "links": [
+  {
+   "label": "Communicator Channels",
+   "type": "DocType",
+   "name": "Communicator Channel",
+   "dependencies": []
+  },
+  {
+   "label": "Communicator Messages",
+   "type": "DocType",
+   "name": "Communicator Message",
+   "dependencies": []
+  },
+  {
+   "label": "Communicator Messenger",
+   "type": "Page",
+   "name": "communicator-messenger",
+   "dependencies": []
+  }
+ ]
+}

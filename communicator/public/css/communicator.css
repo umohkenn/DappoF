@@ -1,0 +1,95 @@
+.communicator__page {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 12px;
+  height: calc(100vh - 200px);
+  padding: 12px;
+}
+
+.communicator__panel {
+  background: var(--bg-color) var(--control-bg) transparent;
+  border: 1px solid var(--border-color, #d1d8dd);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+.communicator__panel-header {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color, #d1d8dd);
+  font-weight: 600;
+}
+
+.communicator__scroll {
+  overflow-y: auto;
+  flex: 1;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.communicator__channel {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border-color, #d1d8dd);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.communicator__channel:hover,
+.communicator__channel:focus {
+  border-color: var(--primary, #1f7bbf);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.communicator__channel-title {
+  font-weight: 600;
+}
+
+.communicator__channel-meta {
+  font-size: 12px;
+  color: var(--text-muted, #6c7680);
+}
+
+.communicator__message {
+  border: 1px solid var(--border-color, #d1d8dd);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.communicator__message--pending {
+  opacity: 0.6;
+}
+
+.communicator__message-body {
+  white-space: pre-wrap;
+  margin-bottom: 6px;
+}
+
+.communicator__message-meta {
+  font-size: 12px;
+  color: var(--text-muted, #6c7680);
+}
+
+.communicator__composer {
+  border: 0;
+  border-top: 1px solid var(--border-color, #d1d8dd);
+  padding: 12px;
+  outline: none;
+  width: 100%;
+}
+
+.communicator__composer:disabled {
+  background: #f5f7fa;
+}
+
+.communicator__placeholder {
+  padding: 12px;
+  color: var(--text-muted, #6c7680);
+}

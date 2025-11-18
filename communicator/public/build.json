@@ -1,0 +1,8 @@
+{
+  "css/communicator.css": [
+    "public/css/communicator.css"
+  ],
+  "js/communicator.js": [
+    "public/js/communicator.js"
+  ]
+}
