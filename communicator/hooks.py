@@ -8,8 +8,8 @@ app_email = "support@example.com"
 app_license = "MIT"
 
 # Desk assets
-app_include_css = ["communicator.bundle.css"]
-app_include_js = ["communicator.bundle.js"]
+app_include_css = ["/assets/communicator/css/communicator.bundle.css"]
+app_include_js = ["/assets/communicator/js/communicator.bundle.js"]
 
 # Installation
 after_install = "communicator.install.after_install"
