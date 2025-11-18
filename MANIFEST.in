@@ -1,8 +1,10 @@
 include MANIFEST.in
 include requirements.txt
-include communicator/modules.txt
-include communicator/pyproject.toml
-include communicator/README.md
+include modules.txt
+include setup.py
+include setup.cfg
+include pyproject.toml
+include README.md
 recursive-include communicator *.json
 recursive-include communicator *.py
 recursive-include communicator *.txt

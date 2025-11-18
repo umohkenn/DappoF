@@ -1,11 +1,15 @@
-# DappoF
+# Communicator
 
-This repository includes the **Communicator** Frappe app for the Education module. The app introduces messaging channels and threaded messages that stay linked to Students, Guardians, Courses, and Instructors.
+Communicator is a lightweight messaging extension for the Frappe Education module. It introduces channels and threaded messages with links back to Education records (students, instructors, courses, and guardians) so conversations stay context-aware.
 
-## Deploying to Frappe Cloud
-1. Push this repository to GitHub or another git remote.
-2. Add the repository as a custom app in your Frappe Cloud site.
-3. Install the app: `bench --site yoursite install-app communicator`.
-4. Open the **Education** module to find the new **Communicator** workspace and DocTypes.
+## Installation
+1. Push this repository to your GitHub account and add it as a custom app in Frappe Cloud.
+2. Install the app on your site: `bench --site yoursite install-app communicator`.
+3. Assign roles to users (Educator, Student, Guardian, or System Manager) and open the **Communicator** workspace under Education.
 
-For app-specific details see [`communicator/README.md`](communicator/README.md).
+## Included DocTypes
+- **Communicator Channel**: Defines audience, privacy, and links to Education entities.
+- **Communicator Message**: Threaded messages with optional file attachments, notifications, and reply-to threading.
+
+## Notes
+The app registers a Communicator entry inside the Education module sidebar and seeds a workspace plus default roles during install.
