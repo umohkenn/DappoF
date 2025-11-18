@@ -25,6 +25,12 @@
    "type": "DocType",
    "name": "Communicator Message",
    "dependencies": []
+  },
+  {
+   "label": "Communicator Messenger",
+   "type": "Page",
+   "name": "communicator-messenger",
+   "dependencies": []
   }
  ]
 }

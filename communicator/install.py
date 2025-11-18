@@ -52,5 +52,13 @@ def ensure_workspace():
             "name": "Communicator Message",
         },
     )
+    workspace.append(
+        "links",
+        {
+            "label": "Communicator Messenger",
+            "type": "Page",
+            "name": "communicator-messenger",
+        },
+    )
     workspace.save(ignore_permissions=True)
 

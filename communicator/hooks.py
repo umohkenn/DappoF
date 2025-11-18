@@ -7,9 +7,9 @@ app_description = "Education-focused messaging module"
 app_email = "support@example.com"
 app_license = "MIT"
 
-# Desk
-app_include_css = []
-app_include_js = []
+# Desk assets
+app_include_css = ["communicator.bundle.css"]
+app_include_js = ["communicator.bundle.js"]
 
 # Installation
 after_install = "communicator.install.after_install"
