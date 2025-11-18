@@ -1,0 +1,10 @@
+{
+  "communicator": {
+    "css": [
+      "public/css/communicator.css"
+    ],
+    "js": [
+      "public/js/communicator.js"
+    ]
+  }
+}
