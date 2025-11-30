@@ -8,6 +8,7 @@ A single-page marketing site for Maryland Prestigious International School inspi
    python -m http.server 8000
    ```
 2. Open the live preview at [http://localhost:8000/website/](http://localhost:8000/website/).
+3. GitHub Pages–ready live link (after pushing to GitHub and enabling Pages for the `work` branch using the `docs/` folder): [https://<your-github-username>.github.io/DappoF/](https://<your-github-username>.github.io/DappoF/)
 
 ## Structure
 - `website/index.html` – main page markup
