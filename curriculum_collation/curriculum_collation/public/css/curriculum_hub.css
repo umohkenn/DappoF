@@ -1,0 +1,45 @@
+.cc-hub {
+  padding: 1rem;
+}
+
+.cc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cc-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.cc-subtitle {
+  color: var(--text-muted);
+}
+
+.cc-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.cc-card {
+  background: linear-gradient(145deg, #ffffff, #f3f7ff);
+  border: 1px solid #dce7ff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 5px 16px rgba(23, 37, 84, 0.08);
+}
+
+.cc-card__label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cc-card__value {
+  margin-top: 6px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}

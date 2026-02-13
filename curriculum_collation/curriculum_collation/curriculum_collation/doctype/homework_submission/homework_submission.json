@@ -1,0 +1,23 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["homework_assignment", "student", "submitted_on", "submission_text", "attachment", "grading_status", "score", "max_score", "feedback"],
+ "fields": [
+  {"fieldname": "homework_assignment", "fieldtype": "Link", "label": "Homework Assignment", "options": "Homework Assignment", "reqd": 1},
+  {"fieldname": "student", "fieldtype": "Link", "label": "Student", "options": "Student", "reqd": 1},
+  {"fieldname": "submitted_on", "fieldtype": "Datetime", "label": "Submitted On", "default": "Now", "read_only": 1},
+  {"fieldname": "submission_text", "fieldtype": "Long Text", "label": "Submission Text", "reqd": 1},
+  {"fieldname": "attachment", "fieldtype": "Attach", "label": "Attachment"},
+  {"default": "Submitted", "fieldname": "grading_status", "fieldtype": "Select", "label": "Grading Status", "options": "Submitted\nIn Review\nGraded\nReturned", "reqd": 1},
+  {"fieldname": "score", "fieldtype": "Float", "label": "Score"},
+  {"fieldname": "max_score", "fieldtype": "Float", "label": "Max Score", "default": 100},
+  {"fieldname": "feedback", "fieldtype": "Text Editor", "label": "Feedback"}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Homework Submission",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"},
+  {"create": 1, "read": 1, "write": 1, "role": "Student"}
+ ]
+}

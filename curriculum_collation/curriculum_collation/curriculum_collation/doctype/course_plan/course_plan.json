@@ -1,0 +1,20 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["course", "framework", "status", "owner_instructor", "start_date", "end_date", "overview"],
+ "fields": [
+  {"fieldname": "course", "fieldtype": "Link", "label": "Course", "options": "Course", "reqd": 1},
+  {"fieldname": "framework", "fieldtype": "Link", "label": "Curriculum Framework", "options": "Curriculum Framework", "reqd": 1},
+  {"default": "Active", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nActive\nCompleted\nArchived", "reqd": 1},
+  {"fieldname": "owner_instructor", "fieldtype": "Link", "label": "Lead Instructor", "options": "User"},
+  {"fieldname": "start_date", "fieldtype": "Date", "label": "Start Date"},
+  {"fieldname": "end_date", "fieldtype": "Date", "label": "End Date"},
+  {"fieldname": "overview", "fieldtype": "Text Editor", "label": "Overview"}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Course Plan",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"}
+ ]
+}

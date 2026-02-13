@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:framework_code",
+ "creation": "2026-02-13 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "framework_code",
+  "organization",
+  "curriculum_name",
+  "academic_year",
+  "status",
+  "valid_from",
+  "valid_to",
+  "description"
+ ],
+ "fields": [
+  {"fieldname": "framework_code", "fieldtype": "Data", "label": "Framework Code", "reqd": 1, "unique": 1},
+  {"fieldname": "organization", "fieldtype": "Data", "label": "Organization", "reqd": 1},
+  {"fieldname": "curriculum_name", "fieldtype": "Data", "label": "Curriculum Name", "reqd": 1},
+  {"fieldname": "academic_year", "fieldtype": "Data", "label": "Academic Year", "reqd": 1},
+  {"default": "Draft", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nActive\nOn Hold\nArchived", "reqd": 1},
+  {"fieldname": "valid_from", "fieldtype": "Date", "label": "Valid From"},
+  {"fieldname": "valid_to", "fieldtype": "Date", "label": "Valid To"},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Curriculum Collation",
+ "name": "Curriculum Framework",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Curriculum Manager", "share": 1, "write": 1},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,25 @@
+{
+ "doctype": "DocType",
+ "is_submittable": 1,
+ "engine": "InnoDB",
+ "field_order": ["course_plan", "unit_plan", "scheme_of_work", "title", "lesson_date", "duration_minutes", "learning_objectives", "lesson_notes", "homework_assignment", "project_work", "status"],
+ "fields": [
+  {"fieldname": "course_plan", "fieldtype": "Link", "label": "Course Plan", "options": "Course Plan", "reqd": 1},
+  {"fieldname": "unit_plan", "fieldtype": "Link", "label": "Unit Plan", "options": "Unit Plan"},
+  {"fieldname": "scheme_of_work", "fieldtype": "Link", "label": "Scheme of Work", "options": "Scheme of Work"},
+  {"fieldname": "title", "fieldtype": "Data", "label": "Lesson Title", "reqd": 1},
+  {"fieldname": "lesson_date", "fieldtype": "Date", "label": "Lesson Date", "reqd": 1},
+  {"fieldname": "duration_minutes", "fieldtype": "Int", "label": "Duration (Minutes)", "reqd": 1},
+  {"fieldname": "learning_objectives", "fieldtype": "Text Editor", "label": "Learning Objectives"},
+  {"fieldname": "lesson_notes", "fieldtype": "Code", "label": "Lesson Notes", "options": "Markdown"},
+  {"fieldname": "homework_assignment", "fieldtype": "Link", "label": "Homework Assignment", "options": "Homework Assignment"},
+  {"fieldname": "project_work", "fieldtype": "Small Text", "label": "Project Work"},
+  {"default": "Planned", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Planned\nDelivered\nReviewed", "reqd": 1}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Lesson Plan",
+ "permissions": [
+  {"create": 1, "delete": 1, "submit": 1, "cancel": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "submit": 1, "read": 1, "write": 1, "role": "Teacher"}
+ ]
+}
