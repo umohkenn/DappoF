@@ -1,0 +1,5 @@
+[
+ {"doctype": "Role", "role_name": "Curriculum Manager", "desk_access": 1},
+ {"doctype": "Role", "role_name": "Teacher", "desk_access": 1},
+ {"doctype": "Role", "role_name": "Student", "desk_access": 1}
+]

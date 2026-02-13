@@ -1,0 +1,20 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["course_plan", "unit_title", "unit_number", "start_date", "end_date", "status", "unit_notes"],
+ "fields": [
+  {"fieldname": "course_plan", "fieldtype": "Link", "label": "Course Plan", "options": "Course Plan", "reqd": 1},
+  {"fieldname": "unit_title", "fieldtype": "Data", "label": "Unit Title", "reqd": 1},
+  {"fieldname": "unit_number", "fieldtype": "Int", "label": "Unit Number"},
+  {"fieldname": "start_date", "fieldtype": "Date", "label": "Start Date"},
+  {"fieldname": "end_date", "fieldtype": "Date", "label": "End Date"},
+  {"default": "Planned", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Planned\nIn Progress\nCompleted\nDeferred", "reqd": 1},
+  {"fieldname": "unit_notes", "fieldtype": "Text Editor", "label": "Unit Notes"}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Unit Plan",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"}
+ ]
+}

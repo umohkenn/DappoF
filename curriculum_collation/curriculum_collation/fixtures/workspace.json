@@ -1,0 +1,12 @@
+[
+ {
+  "doctype": "Workspace",
+  "name": "Curriculum Hub",
+  "title": "Curriculum Hub",
+  "module": "Curriculum Collation",
+  "public": 1,
+  "is_hidden": 0,
+  "icon": "graduation-cap",
+  "content": "[{\"id\":\"header_main\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Curriculum Planning</b></span>\",\"col\":12}},{\"id\":\"shortcut_framework\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Curriculum Framework\",\"col\":3}},{\"id\":\"shortcut_course\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Course Plan\",\"col\":3}},{\"id\":\"shortcut_scheme\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Scheme of Work\",\"col\":3}},{\"id\":\"shortcut_submission\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Homework Submission\",\"col\":3}}]"
+ }
+]

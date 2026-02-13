@@ -1,0 +1,22 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["course_plan", "unit_plan", "week_number", "week_start", "week_end", "status", "objectives", "activities", "assessment_focus"],
+ "fields": [
+  {"fieldname": "course_plan", "fieldtype": "Link", "label": "Course Plan", "options": "Course Plan", "reqd": 1},
+  {"fieldname": "unit_plan", "fieldtype": "Link", "label": "Unit Plan", "options": "Unit Plan"},
+  {"fieldname": "week_number", "fieldtype": "Int", "label": "Week Number", "reqd": 1},
+  {"fieldname": "week_start", "fieldtype": "Date", "label": "Week Start", "reqd": 1},
+  {"fieldname": "week_end", "fieldtype": "Date", "label": "Week End", "reqd": 1},
+  {"default": "Draft", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nIn Progress\nCompleted\nBlocked", "reqd": 1},
+  {"fieldname": "objectives", "fieldtype": "Text Editor", "label": "Objectives"},
+  {"fieldname": "activities", "fieldtype": "Text Editor", "label": "Activities"},
+  {"fieldname": "assessment_focus", "fieldtype": "Small Text", "label": "Assessment Focus"}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Scheme of Work",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"}
+ ]
+}

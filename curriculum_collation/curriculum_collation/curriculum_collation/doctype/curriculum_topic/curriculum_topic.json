@@ -1,0 +1,20 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["framework", "parent_topic", "topic_code", "title", "learning_outcomes", "status", "sequence"],
+ "fields": [
+  {"fieldname": "framework", "fieldtype": "Link", "label": "Framework", "options": "Curriculum Framework", "reqd": 1},
+  {"fieldname": "parent_topic", "fieldtype": "Link", "label": "Parent Topic", "options": "Curriculum Topic"},
+  {"fieldname": "topic_code", "fieldtype": "Data", "label": "Topic Code", "reqd": 1},
+  {"fieldname": "title", "fieldtype": "Data", "label": "Title", "reqd": 1},
+  {"fieldname": "learning_outcomes", "fieldtype": "Text Editor", "label": "Learning Outcomes"},
+  {"default": "Active", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Active\nUnder Review\nDeprecated", "reqd": 1},
+  {"fieldname": "sequence", "fieldtype": "Int", "label": "Sequence"}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Curriculum Topic",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"}
+ ]
+}

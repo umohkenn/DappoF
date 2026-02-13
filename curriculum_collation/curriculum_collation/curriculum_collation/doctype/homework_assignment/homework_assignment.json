@@ -1,0 +1,22 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["course_plan", "lesson_plan", "title", "instructions", "due_date", "max_score", "status", "published_on"],
+ "fields": [
+  {"fieldname": "course_plan", "fieldtype": "Link", "label": "Course Plan", "options": "Course Plan", "reqd": 1},
+  {"fieldname": "lesson_plan", "fieldtype": "Link", "label": "Lesson Plan", "options": "Lesson Plan"},
+  {"fieldname": "title", "fieldtype": "Data", "label": "Title", "reqd": 1},
+  {"fieldname": "instructions", "fieldtype": "Text Editor", "label": "Instructions", "reqd": 1},
+  {"fieldname": "due_date", "fieldtype": "Datetime", "label": "Due Date", "reqd": 1},
+  {"fieldname": "max_score", "fieldtype": "Float", "label": "Max Score", "default": 100},
+  {"default": "Draft", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nPublished\nClosed", "reqd": 1},
+  {"fieldname": "published_on", "fieldtype": "Datetime", "label": "Published On", "read_only": 1}
+ ],
+ "module": "Curriculum Collation",
+ "name": "Homework Assignment",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "write": 1, "role": "Curriculum Manager"},
+  {"create": 1, "read": 1, "write": 1, "role": "Teacher"},
+  {"read": 1, "role": "Student"}
+ ]
+}

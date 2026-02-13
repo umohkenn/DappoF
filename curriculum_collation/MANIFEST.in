@@ -1,0 +1,14 @@
+include *.md
+include *.txt
+recursive-include curriculum_collation *.css
+recursive-include curriculum_collation *.csv
+recursive-include curriculum_collation *.html
+recursive-include curriculum_collation *.ico
+recursive-include curriculum_collation *.js
+recursive-include curriculum_collation *.json
+recursive-include curriculum_collation *.md
+recursive-include curriculum_collation *.png
+recursive-include curriculum_collation *.py
+recursive-include curriculum_collation *.svg
+recursive-include curriculum_collation *.txt
+recursive-exclude curriculum_collation *.pyc
