@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:CTP-.YYYY.-.#####",
+ "creation": "2026-02-13 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "title",
+  "academic_term",
+  "program",
+  "curriculum_map",
+  "course",
+  "unit",
+  "sequence_order",
+  "status",
+  "progress_section",
+  "planned_start_date",
+  "planned_end_date",
+  "actual_start_date",
+  "actual_end_date",
+  "curriculum_completion_percent",
+  "standards_completion_percent",
+  "links_section",
+  "cambridge_lesson_plan",
+  "lesson_note",
+  "homework",
+  "assignment",
+  "collaboration_space_url",
+  "standards_section",
+  "built_in_standards",
+  "curriculum_completion_standards",
+  "notes_section",
+  "description",
+  "next_transition_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "curriculum_map",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Curriculum Map",
+   "options": "Curriculum Map",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Course",
+   "options": "Course",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "Course"
+  },
+  {
+   "fieldname": "sequence_order",
+   "fieldtype": "Int",
+   "label": "Sequence Order"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nIn Progress\nReview\nCompleted\nArchived",
+   "reqd": 1
+  },
+  {
+   "fieldname": "progress_section",
+   "fieldtype": "Section Break",
+   "label": "Timeline and Progress"
+  },
+  {
+   "fieldname": "planned_start_date",
+   "fieldtype": "Date",
+   "label": "Planned Start Date"
+  },
+  {
+   "fieldname": "planned_end_date",
+   "fieldtype": "Date",
+   "label": "Planned End Date"
+  },
+  {
+   "fieldname": "actual_start_date",
+   "fieldtype": "Date",
+   "label": "Actual Start Date"
+  },
+  {
+   "fieldname": "actual_end_date",
+   "fieldtype": "Date",
+   "label": "Actual End Date"
+  },
+  {
+   "fieldname": "curriculum_completion_percent",
+   "fieldtype": "Percent",
+   "label": "Curriculum Completion %"
+  },
+  {
+   "fieldname": "standards_completion_percent",
+   "fieldtype": "Percent",
+   "label": "Standards Completion %"
+  },
+  {
+   "fieldname": "links_section",
+   "fieldtype": "Section Break",
+   "label": "Learning Artifacts"
+  },
+  {
+   "fieldname": "cambridge_lesson_plan",
+   "fieldtype": "Link",
+   "label": "Cambridge Lesson Plan",
+   "options": "Lesson Plan"
+  },
+  {
+   "fieldname": "lesson_note",
+   "fieldtype": "Link",
+   "label": "Lesson Note",
+   "options": "Lesson Note"
+  },
+  {
+   "fieldname": "homework",
+   "fieldtype": "Link",
+   "label": "Homework",
+   "options": "Assessment"
+  },
+  {
+   "fieldname": "assignment",
+   "fieldtype": "Link",
+   "label": "Assignment",
+   "options": "Assessment"
+  },
+  {
+   "fieldname": "collaboration_space_url",
+   "fieldtype": "Data",
+   "label": "Collaboration Space URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "standards_section",
+   "fieldtype": "Section Break",
+   "label": "Standards"
+  },
+  {
+   "fieldname": "built_in_standards",
+   "fieldtype": "Small Text",
+   "label": "Built-in Standards"
+  },
+  {
+   "fieldname": "curriculum_completion_standards",
+   "fieldtype": "Small Text",
+   "label": "Curriculum Completion Standards"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "next_transition_notes",
+   "fieldtype": "Text",
+   "label": "Next Transition Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-13 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Education",
+ "name": "Curriculum Transition Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
