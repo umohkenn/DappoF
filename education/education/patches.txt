@@ -1,7 +1,3 @@
 [pre_model_sync]
-# Add patch paths here if needed, e.g.:
-# education.patches.v0_0_1.some_pre_sync_patch
 
 [post_model_sync]
-# Add patch paths here if needed, e.g.:
-# education.patches.v0_0_1.some_post_sync_patch
